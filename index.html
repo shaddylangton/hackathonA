@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encointer Event Attendance</title>
+    <script src="https://cdn.jsdelivr.net/npm/@polkadot/api"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Encointer Event Attendance</h1>
+    <button onclick="registerAttendee()">Register Attendee</button>
+    <input type="number" id="tokenCount" placeholder="Number of Tokens" />
+    <button onclick="issueTokens()">Issue Tokens</button>
+    <br /><br />
+    <label for="attendee">Attendee:</label>
+    <input type="text" id="attendee" placeholder="Attendee Address" />
+    <label for="token">Token ID:</label>
+    <input type="number" id="token" placeholder="Token ID" />
+    <button onclick="verifyAttendance()">Verify Attendance</button>
+    <br /><br />
+    <div id="output"></div>
+  </body>
+</html>
